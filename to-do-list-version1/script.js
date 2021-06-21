@@ -4,6 +4,7 @@ class Task extends React.Component {
     super(props)
   }
   
+
   render() {
     let class_name = 'task'
     class_name += this.props.done ? ' task-success' : ' task-info';
@@ -34,8 +35,7 @@ class App extends React.Component {
       1000
     );
   }
-
-  
+ 
   addTask() {
     this.tasksArray.push({
       value: addInput.value,
